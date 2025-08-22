@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: saas-base-backend
+    env: node
+    plan: starter
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
